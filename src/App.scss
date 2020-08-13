@@ -1,0 +1,1158 @@
+$colorprincipal: #6D8EC1;
+$colorsecond: #ffffff;
+$colortres:#f8f9fa;
+$colornoir: black;
+$text: 'Montserrat', sans-serif;
+$title: 'Arapey', serif;
+$titlesize: 50px;
+$text-size:20px;
+$weight-title: 200;
+
+.navbar-header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    box-shadow: #6D8EC1;
+    max-height: 90px;
+}
+.logo-center{
+    width: 150px;
+    margin-left: -85px;
+    left:50%;
+    top:15px;
+    position: absolute;
+}
+.navbar{
+    width: 100%;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+
+}
+.logo-header{
+    width: 10%;
+    .logo-header img{
+        width:50%;
+    }
+}
+.nav-right, .nav-left{
+
+    display: flex;
+    align-items: center;
+}
+.nav-right{
+    justify-content: flex-end;
+    width: 50%;
+    .nav-link:nth-child(2),.nav-link:nth-child(3){
+        width: 150px;
+    }
+}
+.nav-left{
+    justify-content: flex-start;
+    width: 50%;
+    .nav-link:nth-child(1),.nav-link:nth-child(3){
+        width: 150px;
+    }
+}
+.navbar-nav{
+    width:100%;
+
+}
+.nav-link{
+    width: 200px;
+    text-align: center;
+    margin: 0 -20px;
+    color: $colorsecond!important;
+}
+
+.box-btn{
+    display: flex;
+}
+.input-line{
+    display:flex!important;
+    width: 100%;
+}
+.input-select {
+    width: 30%;
+    margin: 0;
+}
+.rounded-quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid $colorprincipal;
+    background-color: $colorprincipal;
+}
+.quantity{
+    display: flex;
+    width: 30%;
+}
+
+#background-header{
+    background-color: black;
+
+}
+
+//   li{
+//       list-style-type: none;
+//     }
+  
+//   .menu__container{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     width: 100%;
+//     padding: 15px 15px 15px 60px;
+//     font-size: 2em;
+//   }
+  
+//   .menu__burger{
+//     width: max-content;
+//     position:relative;
+//     &:hover{
+//       cursor: pointer;
+//     }
+//     .bars{
+//       position: relative;
+//       display: block;
+//       background: #ff4d4d;
+//       height: 5px;
+//       width: 30px;
+//       border-radius: 35px;
+//       margin: 11px;
+//       transition: transform .5s, opacity .5s;
+//     }
+//     .bars:nth-of-type(2){
+//       position: absolute;
+//       bottom: 8px;
+//     }
+//     .bars:nth-of-type(3){
+//       position: absolute;
+//       bottom: 8px;
+//     }
+//   }
+  
+//   .menu__burger.active{
+//     .bars:nth-of-type(1){
+//       opacity: 0;
+//     }
+//     .bars:nth-of-type(2){
+//       transform: rotate(-45deg);
+//     }
+//     .bars:nth-of-type(3){
+//       transform: rotate(45deg);
+//     }
+//     .bars:nth-of-type(4){
+//       opacity: 0;
+//     }
+//   }
+  
+//   .menu__items{
+//     position: absolute;
+//     display: block;
+//     margin: 0 0 0 42px;
+//     padding: 45px 35px 35px 35px;
+//     opacity: 0;
+//     left: 28px;
+//     background: white;
+//     width: max-content;
+//     border-radius: 3px;
+//     transform: translate(-300px, -300px);
+//     z-index: -1;
+//     font-size: .8em;
+//     transition: transform .5s, opacity .8s;
+//     li{
+//       margin: 10px 0;
+//       i{
+//         margin-right: 20px;
+//       }
+//       &:hover{
+//         cursor: pointer;
+//         opacity: .8;
+//       }
+//     }
+//   }
+  
+//   .menu__items.active{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     justify-content: center;
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+
+.background-image{
+    background-image: url('./img/reception.jpg');
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.date-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dates-center {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.chambres-center{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.select-center {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    input::placeholder{
+        font-size: 13px;
+       
+    }
+    input{
+        border:none;
+        background-color: #ffffff;
+        padding-left:10px;
+    }
+}
+
+.date {
+    display: flex;
+    background-color: $colornoir;
+    width: 60%;
+    font-family: $text;
+    padding: 50px 50px;
+    margin-top: -5%;
+    color: $colorsecond;
+    font-size: $text-size;
+
+
+}
+.button-reserver{
+    background-color: $colorprincipal!important;
+    border: 1px solid $colorprincipal!important;
+}
+
+
+.form-reservation{
+    width:80%;
+    margin-left: 10%;
+
+
+}
+.reservations-line{
+    width:100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.chambre-border{
+    width: 33%;
+    border-right: 1px solid $colorprincipal;
+    display: flex;
+    justify-content: center;
+
+}
+.selection{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    span{
+        margin-right: 10px;
+        
+    }
+}
+.ant-select-selector{
+    background-color: $colornoir!important;
+    
+}
+.ant-select-arrow{
+    color: $colorsecond!important;
+}
+.ant-select-selection-item{
+    color: $colorsecond;
+}
+.reserver-btn-zone{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px;
+}
+// deuxieme partie presentation
+
+h1  {
+    font-family:$title;
+    padding-bottom:30px; 
+}
+
+.description{
+    font-family: $text;
+    width: 50%;
+
+}
+
+.h1-accueil{
+    width: 50%;
+    align-items: center;
+    padding: 40px;
+
+    p{
+        text-align: justify;
+        font-weight: $weight-title;
+        padding-top: 20px;
+    }
+
+}
+.trait{
+    background-color:$colorprincipal;
+    height: 3px;
+    width: 150px;
+
+}
+.button-introduction{
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid $colornoir;
+    padding:5px 10px;
+}
+
+
+.image-2{
+    background: url('./img/salon.jpg');
+    height: 60vh;
+    width: 40%;
+    background-position-y: 70%;
+    background-position-x: 50%;
+    background-size: cover;
+}
+.description-h1{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center
+}
+
+.image-chambre{
+    margin: -10% 0 0 40%;
+}
+// Footer
+
+.background-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    align-items: center;
+    margin-top: 50px;
+
+    .logo-footer{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .localisation{
+        width: 34%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $colorprincipal;
+        height: 30vh;
+        align-items: center;
+    }
+
+    ul {
+        list-style: none;
+    }
+    .newsletter{
+        background-color: #6D8EC1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+        height: 30vh;
+
+        button{
+            background-color: $colornoir;
+            color: $colorsecond;
+            border: 1px solid $colornoir;
+        }
+        input {
+            border: 1px solid $colornoir;
+        }
+        input:focus{
+            outline: none;
+        }
+    }
+
+    .reseaux-sociaux img{
+        width: 30px;
+    }
+    .reseaux-sociaux{
+        margin-top:10px;
+
+    }
+}
+
+.mentions{
+    display: flex;
+    background-color: $colornoir;
+    color: $colorsecond;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+
+.background-2{
+    background-color: $colortres;
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    padding: 5%;
+    align-items: center;
+
+    .article-2 {
+        width: 40%;
+       padding: 5%;
+        h2{
+            font-family: $title;
+            font-size: 50px;
+        }
+        p{
+            text-align: justify;
+            font-weight: $weight-title;
+        }
+    }
+
+    .background-article-2{
+        background-image: url('./img/salon2.jpg');
+        height: 60vh;
+        width: 60%;
+        background-size: cover;
+    }
+
+}
+
+// chambres
+.background-chambre{
+    background-color: $colornoir;
+    text-align: center;
+    padding:2%;
+    h2{
+        font-family: $title;
+        font-size: 50px;
+        color: $colorsecond;
+    }
+    span{
+        color: $colorsecond;
+        font-family: $text;
+
+    }
+    p {
+        font-family: $text;
+        color: $colorsecond;
+        font-weight: 100;
+    }
+}
+
+.reception-img{
+    background-image: url('./img/restaurant1.jpg');
+    width: 100%;
+    height: 65vh;
+    background-size: cover;
+    background-position-y: 70%;
+    background-attachment: fixed;
+}
+
+// part5
+.color-part5{
+    background-color: $colortres;
+    width: 80%;
+    height: 200px;
+    padding: 50px 50px;
+    margin-top: -5%;
+}
+.part5-center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+   
+}
+.image-test-part5{
+    display: flex;
+}
+.image-test-part5{
+    display: flex;
+    justify-content: center;
+}
+.restaurant-philippe {
+    background-color: $colorsecond;
+    height: 437px;
+    padding: 150px 25px;
+
+    h2{
+        font-size: $titlesize;
+        font-family: $title;
+    }
+    p{
+        font-family: $text;
+        
+    }
+}
+.image-center{
+    width: 80%;
+}
+
+// services et prestations
+.part6{
+    height: 100vh;
+    background-color: $colortres;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:35px 0;
+}
+.background-services {
+    display: flex;
+    justify-content: space-around;
+    
+;
+   
+}
+.services h2{
+    font-family: $title;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -90px;
+}
+.card-services{
+    width: 20%;
+    padding: 50px;
+    background-color: $colornoir;
+    color: $colorsecond;
+}
+.services{
+    margin-top: 40px;
+}
+
+.toggle{
+    background-color: $colornoir;
+    position: fixed;
+    color: $colorsecond;
+    border: 1px solid $colornoir; 
+    padding: 20px 10px;
+    bottom: 45px;
+   
+}
+
+.position-reserver{
+    position: fixed;
+    display: flex;
+    
+}
+
+.reserver-open{
+    left: 225px;
+    bottom: 46px;
+}
+
+.toggle-open{
+    margin-bottom:87px;
+}
+
+.side-bar{
+    background-color: $colornoir;
+    margin-right: 0px!important;
+    color: $colorsecond;
+    padding: 10px;
+    width: 225px;
+
+    div p{
+        padding: 10px 20px;
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
+    }
+    div p:nth-child(3){
+        border: none;
+    }
+}
+
+.bar-open{
+    margin-left: -225px;
+}
+.button-introduction1{
+    border: none;
+    background-color: $colortres;
+    border-bottom: 1px solid $colornoir;
+    padding:5px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    #background-header{
+        background-color: black;
+        height: 67px;
+    }
+    .navbar-nav{
+        width: 100%;
+        background-color: rgba(0,0,0,0);
+    }
+    .navbar-toggler{
+          display: none;
+      } 
+    .nav-right{
+        margin-top: 120px;
+        width: 100%;
+        background-color: rgba(0,0,0,0);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .nav-left{
+        display: none;
+    }
+    .nav-link:nth-child(1),.nav-link:nth-child(2),.nav-link:nth-child(3){
+        display: none!important;
+    }
+
+    .nav-link{
+        width: 150px!important;
+    }
+    .box-btn .btn:nth-child(1),.box-btn .btn:nth-child(3){
+        margin-top: -10px;
+    }
+
+
+
+    .ant-picker{
+        width: 320px!important;
+    }
+    .services h2{
+        margin-top: 90px;
+        margin-bottom: 35px;
+    }
+    .date{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+    .dates-center{
+        width:94%!important;
+        margin-left:0;
+        margin-bottom:25px;
+    }
+    .chambres-center{
+        align-items: center;
+    }
+    
+    .select-center{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:320px!important;
+        }
+    .select-center input{
+            width: 257px;
+    }
+    .dates-center label{
+        display:flex!important;
+        justify-content:center!important;
+        text-align:center!important;
+    }
+    .form input{
+        width: 80%;
+    }
+    .description-h1{
+        display: flex;
+        flex-direction: column;
+    }
+    .h1-accueil{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .h1-accueil h1{
+        font-size: 30px!important;
+        text-align:center; 
+    }
+    .image-chambre img{
+        width:70%;
+    }
+    .image-2{
+        width:80%;
+    }
+    .background-2{
+        width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    }
+    .background-article-2{
+        width:100%!important;
+    }
+    .background-chambre h2{
+        font-size: 35px;
+    }
+    .article-2{
+        width:100%!important;
+    }
+    .article-2 h2{
+        font-size:30px!important;
+        text-align:center;
+        margin-bottom:15px;
+    }
+    .card-services{
+        flex-wrap:wrap;
+        width: 45%;
+        height: 190px;
+        margin-bottom: 20px;
+        padding: 25px 20px;
+    }
+    .background-services{
+        flex-wrap: wrap;
+    }
+    .part6,.part5-center{
+        height: auto;
+    }
+    .image-test-part5{
+        flex-direction:column;
+    }
+    .image-center{
+        margin-left:0px;
+        margin-bottom:-100px;
+        z-index:1000;
+        width:200px;
+    }
+    .restaurant-philippe{
+        width: 300px;
+        margin-left: -50px;
+        height:auto;
+        margin-bottom:150px;
+    }
+    .restaurant-philippe h2{
+        font-size:15px;
+    }
+    .part6{
+        margin-top: 35px;
+    }
+    .background-footer{
+        margin-top: 0;
+        height:auto!important;
+        flex-direction:column!important;
+    }
+    .localisation,.newsletter{
+        width:100%!important;
+    }
+    .logo-footer{
+        padding: 50px 0;
+    }
+    .newsletter form{
+        width:100%;
+        padding:0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .newsletter form input{
+        width:150px!important;
+    }
+    .reception-img{
+        height: 70vh;
+    }
+  }
+
+
+  /*GALAXY NOTE 9*/
+@media only screen and (min-width: 414px) and (max-width: 767px){
+    #background-header{
+        background-color: black;
+        height: 67px;
+    }
+    .navbar-nav{
+        width: 100%;
+        background-color: rgba(0,0,0,0);
+    }
+    .navbar-toggler{
+          display: none;
+      } 
+    .nav-right{
+        margin-top: 120px;
+        width: 100%;
+        background-color: rgba(0,0,0,0);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .nav-left{
+        display: none;
+    }
+    .nav-link:nth-child(1),.nav-link:nth-child(2),.nav-link:nth-child(3){
+        display: none!important;
+    }
+
+    .nav-link{
+        width: 150px!important;
+    }
+    .box-btn .btn:nth-child(1),.box-btn .btn:nth-child(3){
+        margin-top: -10px;
+    }
+    .date{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+    .dates-center{
+        width:94%!important;
+        margin-left:0;
+        margin-bottom:25px;
+    }
+    .chambres-center{
+        align-items: center;
+    }
+    .select-center{
+        display:flex;
+        justify-content:center;
+        align-items:center
+    }
+    .dates-center label{
+        display:flex!important;
+        justify-content:center!important;
+        text-align:center!important;
+    }
+    .select-center input{
+        width: 257px;
+    }
+    .form input{
+        width: 80%;   
+    
+    }
+    .description-h1{
+        display: flex;
+        flex-direction: column;
+    }
+    .h1-accueil{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .h1-accueil h1{
+        font-size: 30px!important;
+        text-align:center; 
+    }
+    .image-chambre img{
+        width:70%;
+    }
+    .image-2{
+        width:80%;
+    }
+    .background-2{
+        width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    }
+    .background-article-2{
+        width:100%!important;
+    }
+    .background-chambre h2{
+        font-size: 35px;
+    }
+    .article-2{
+        width:100%!important;
+    }
+    .article-2 h2{
+        font-size:30px!important;
+        text-align:center;
+        margin-bottom:15px;
+    }
+    .card-services{
+        flex-wrap:wrap;
+        width: 45%;
+        height: 190px;
+        margin-bottom: 20px;
+        padding: 25px 20px;
+    }
+    .background-services{
+        flex-wrap: wrap;
+    }
+    .part6,.part5-center{
+        height: auto;
+    }
+    .image-test-part5{
+        flex-direction:column;
+    }
+    .image-center{
+        margin-left:50px;
+        margin-bottom:-100px;
+        z-index:1000;
+        width:200px;
+    }
+    .restaurant-philippe{
+        width:100%;
+        height:auto;
+        margin-bottom:150px;
+    }
+    .restaurant-philippe h2{
+        font-size:15px;
+    }
+    .part6{
+        margin-top: 35px;
+    }
+    .background-footer{
+        height:auto!important;
+        flex-direction:column!important;
+    }
+    .localisation,.newsletter{
+        width:100%!important;
+    }
+    .logo-footer{
+        padding: 25px 0;
+    }
+    .newsletter{
+        border-top: 1px solid white;
+    }
+    .newsletter form{
+        width:100%;
+        padding:0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .newsletter form input{
+        width:200px;
+    }
+    .reception-img{
+        height: 100vh;
+    }
+}
+
+    /* redmi note Xioamin 5_7 et samsung note 9*/
+@media only screen and (min-width: 393px) and (max-width: 767px) { 
+    #background-header{
+        background-color: black;
+        height: 67px;
+    }
+    .navbar-nav{
+        width: 100%;
+        background-color: rgba(0,0,0,0);
+    }
+    .navbar-toggler{
+          display: none;
+      } 
+    .nav-right{
+        margin-top: 120px;
+        width: 100%;
+        background-color: rgba(0,0,0,0);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .nav-left{
+        display: none;
+    }
+    .nav-link:nth-child(1),.nav-link:nth-child(2),.nav-link:nth-child(3){
+        display: none!important;
+    }
+
+    .nav-link{
+        width: 150px!important;
+    }
+    .box-btn .btn:nth-child(1),.box-btn .btn:nth-child(3){
+        margin-top: -10px;
+    }
+    .date{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+    .dates-center{
+        width:94%!important;
+        margin-left:0;
+        margin-bottom:25px;
+    }
+    .chambres-center{
+        align-items: center;
+    }
+    .select-center{
+        display:flex;
+        justify-content:center;
+        align-items:center
+    }
+    .dates-center label{
+        display:flex!important;
+        justify-content:center!important;
+        text-align:center!important;
+    }
+    .select-center input{
+        width: 257px;
+    }
+    .form input{
+        width: 80%;   
+    
+    }
+    .description-h1{
+        display: flex;
+        flex-direction: column;
+    }
+    .h1-accueil{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .h1-accueil h1{
+        font-size: 30px!important;
+        text-align:center; 
+    }
+    .image-chambre img{
+        width:70%;
+    }
+    .image-2{
+        width:80%;
+    }
+    .background-2{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .background-article-2{
+        width:100%!important;
+    }
+    .background-chambre h2{
+        font-size: 35px;
+    }
+    .article-2{
+        width:100%!important;
+    }
+    .article-2 h2{
+        font-size:30px!important;
+        text-align:center;
+        margin-bottom:15px;
+    }
+    .card-services{
+        flex-wrap:wrap;
+        width: 45%;
+        height: 190px;
+        margin-bottom: 20px;
+        padding: 25px 20px;
+    }
+    .background-services{
+        flex-wrap: wrap;
+    }
+    .part6,.part5-center{
+        height: auto;
+    }
+    .image-test-part5{
+        flex-direction:column;
+    }
+    .image-center{
+        margin-left:-50px;
+        margin-bottom:-250px;
+        z-index:0;
+        width:250px;
+    }
+    .restaurant-philippe{
+        width:100%;
+        height:auto;
+        width: 400px;
+        margin-left: -82px;
+    }
+    .restaurant-philippe h2{
+        margin-top: 120px;
+        font-size:30px;
+        text-align:center;
+    }
+    .services{
+        margin:0px;
+    }
+    .services h2{
+        margin-top: 100px;
+        font-size: 30px;
+    }
+    .part6{
+        margin-top: 35px;
+    }
+    .background-footer{
+        height:auto!important;
+        flex-direction:column!important;
+    }
+    .localisation,.newsletter{
+        width:100%!important;
+    }
+    .newsletter form{
+        width:100%;
+        padding:0 15px;
+    }
+    .newsletter-form input{
+        width:150px;
+    }
+    .reception-img{
+        height: 100vh;
+    }
+    .ant-space-item{
+        display: flex;
+        justify-content: center;
+    }
+   }
+

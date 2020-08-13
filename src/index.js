@@ -1,0 +1,24 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.scss';
+import App from './App';
+import { createStore, combineReducers } from 'redux'
+import { Provider } from 'react-redux'
+import * as serviceWorker from './serviceWorker'
+import languageReducer from './store/languageReducer'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const store = createStore(
+
+  combineReducers({
+    languageReducer,
+    }), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  )
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+  
+ , document.getElementById('root'))
+ serviceWorker.unregister()
