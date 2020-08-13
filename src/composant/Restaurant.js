@@ -16,12 +16,12 @@ function Restaurant() {
                 <div className='restaurant-philippe'>
 
                         <h2>{translation(lang,"h2p03")}</h2>
-                        <p>
+                        
                         <p>Philippe Labbé</p>
                         <p>{translation(lang,"p03")}</p>
                         <p>{translation(lang,"chef01")}</p> 
                         <p>{translation(lang,"chef02")}</p>
-                        </p>
+                        
 
                 </div>
             </div>

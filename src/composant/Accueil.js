@@ -8,7 +8,6 @@ import Restaurant from './Restaurant';
 import Service from './Service'
 import Banner from './Banner';
 
-import { useDispatch, useSelector } from 'react-redux'
 
   
 
@@ -19,8 +18,7 @@ function Accueil() {
         window.scrollTo(0, 0)
       }, [])
 
-      const lang = useSelector(state => state.languageReducer.language)
-      const dispatch = useDispatch()
+      
 
       
 

@@ -31,7 +31,7 @@ function ScrollReseve() {
         <div>
              <div className='position-reserver'>
                 <button className='toggle' onClick={() => handleOpen()}>
-                    <spam style={{writingMode: 'vertical-rl'}}>{translation(lang,"reserver")}</spam>
+                    <span style={{writingMode: 'vertical-rl'}}>{translation(lang,"reserver")}</span>
                 </button>
             </div>
         </div>
@@ -42,9 +42,9 @@ function ScrollReseve() {
             <div className='position-reserver reserver-open'>
                 <div className='side-bar bar-open'>
 
-                        <div><p><a><FontAwesomeIcon icon={faBed} style={{marginRight:'15px'}}/>{translation(lang,"sr01")}</a></p></div>
-                        <div> <p> <a><FontAwesomeIcon icon={faUtensils} style={{marginRight:'15px'}}/>{translation(lang,"sr02")}</a></p></div>
-                        <div><p style={{borderBottom:"none"}} > <a><FontAwesomeIcon icon={faSuitcaseRolling} style={{marginRight:'15px'}}/>{translation(lang,"sr03")}</a></p></div>
+                        <div><p><a href="#"><FontAwesomeIcon icon={faBed} style={{marginRight:'15px'}}/>{translation(lang,"sr01")}</a></p></div>
+                        <div> <p> <a href="#"><FontAwesomeIcon icon={faUtensils} style={{marginRight:'15px'}}/>{translation(lang,"sr02")}</a></p></div>
+                        <div><p style={{borderBottom:"none"}} > <a href="#"><FontAwesomeIcon icon={faSuitcaseRolling} style={{marginRight:'15px'}}/>{translation(lang,"sr03")}</a></p></div>
 
                  </div>
 

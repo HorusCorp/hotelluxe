@@ -12,25 +12,25 @@ function Header() {
 
     return (
         <div className='navbar-header'>
-            <nav class="navbar navbar-expand-lg navbar-light" id='background-header'>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg navbar-light" id='background-header'>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style={{display:"flex", justifyContent:'center'}}>
-                <div class="navbar-nav">
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup" style={{display:"flex", justifyContent:'center'}}>
+                <div className="navbar-nav">
                 <div className='nav-left'>
-                        <Link class="nav-link" to='/Accueil' aria-label="Accueil">{translation(lang,"accueil")}</Link>
-                        <Link class="nav-link" to='/Chambre' aria-label="Accueil">{translation(lang,"chambres&suites")}</Link>
-                        <Link class="nav-link" to='/Restaurant' aria-label="Accueil">{translation(lang,"restaurant")}</Link>
-                        <Link class="nav-link" to='/Service' aria-label="Accueil" >{translation(lang,"services&prestations")}</Link>
+                        <Link className="nav-link" to='/Accueil' aria-label="Accueil">{translation(lang,"accueil")}</Link>
+                        <Link className="nav-link" to='/Chambre' aria-label="Accueil">{translation(lang,"chambres&suites")}</Link>
+                        <Link className="nav-link" to='/Restaurant' aria-label="Accueil">{translation(lang,"restaurant")}</Link>
+                        <Link className="nav-link" to='/Service' aria-label="Accueil" >{translation(lang,"services&prestations")}</Link>
                 </div>
                 <div className='logo-center'>
                     <img src='../../logo-arrondi.svg' alt='hotel camille' width='170px'></img>
                 </div>
                 <div className='nav-right'>
-                <Link class="nav-link" to='/Galerie' aria-label="Accueil" >{translation(lang,"galeriePhotos")}</Link>
-                <Link class="nav-link" to='/Actualité' aria-label="Accueil">{translation(lang,"actualités")}</Link>
-                <Link class="nav-link" to='/Contact' aria-label="Accueil"><FontAwesomeIcon icon={faEnvelope} style={{width:'20px', height:'20px', color:'white'}}/></Link>
+                <Link className="nav-link" to='/Galerie' aria-label="Accueil" >{translation(lang,"galeriePhotos")}</Link>
+                <Link className="nav-link" to='/Actualité' aria-label="Accueil">{translation(lang,"actualités")}</Link>
+                <Link className="nav-link" to='/Contact' aria-label="Accueil"><FontAwesomeIcon icon={faEnvelope} style={{width:'20px', height:'20px', color:'white'}}/></Link>
                     <div className='box-btn'>
                         <div className='btn btn-fr' onClick={(() => dispatch({ type: 'fr' }))}><img src='../../france.svg' alt='fr' width='30' heigh='20'></img></div>
                         <div className='btn btn-en' onClick={(() => dispatch({ type: 'en' }))}><img src='../../uk.svg' alt='fr' width='30' heigh='20'></img></div>
